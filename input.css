@@ -3,36 +3,57 @@
 @tailwind utilities;
 
 body {
-    background-color: #f9f9f4;
-    color: #16100c;
+  background-color: #f9f9f4;
+  color: #16100c;
+}
+
+.h-screen {
+  height: auto;
+  min-height: 100vh;
+}
+
+h1 {
+  @apply text-3xl;
+}
+
+h2 {
+  @apply text-2xl mt-2;
+}
+
+p {
+  @apply mb-2;
+}
+
+#our-services {
+  background-color: #f9f9f4;
 }
 
 .bg-foliage-top-left,
 .bg-foliage-top-right,
 .bg-foliage-bottom-left,
 .bg-foliage-bottom-right {
-    display: block;
-    z-index: -1;
-    position: absolute;
+  display: block;
+  z-index: -1;
+  position: absolute;
 }
 
 .bg-foliage-top-left {
-    top: 0;
-    left: 0;
-    transform: translate(-4%) rotate(90deg);
+  top: 0;
+  left: 0;
+  transform: translate(-4%) rotate(90deg);
 }
 .bg-foliage-top-right {
-    top: 0;
-    right: 0;
-    transform: translate(4%) rotate(180deg);
+  top: 0;
+  right: 0;
+  transform: translate(4%) rotate(180deg);
 }
 .bg-foliage-bottom-left {
-    bottom: 0;
-    left: 0;
-    transform: translate(-4%);
+  bottom: 0;
+  left: 0;
+  transform: translate(-4%);
 }
 .bg-foliage-bottom-right {
-    bottom: 0;
-    right: 0;
-    transform: translate(4%) rotate(-90deg);
+  bottom: 0;
+  right: 0;
+  transform: translate(4%) rotate(-90deg);
 }
