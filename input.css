@@ -12,6 +12,14 @@ body {
   min-height: 100vh;
 }
 
+.img-card {
+  @apply drop-shadow-md bg-white mx-auto p-2 text-center italic mb-2 flex flex-col justify-center;
+}
+
+.img-card img:hover {
+  cursor: pointer;
+}
+
 h1 {
   @apply text-3xl;
 }
