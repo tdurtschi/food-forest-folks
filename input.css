@@ -45,7 +45,6 @@ p {
 .bg-foliage-bottom-left,
 .bg-foliage-bottom-right {
   display: block;
-  z-index: -1;
   position: absolute;
 }
 

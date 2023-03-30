@@ -10,33 +10,44 @@
 </head>
 
 <body>
-  <div class="h-screen flex flex-col justify-center">
-    <img class="bg-foliage-top-left w-1/3 sm:w-1/12" src="./images/foliage.png"></img>
-    <img class="bg-foliage-top-right w-1/3 sm:w-1/12" src="./images/foliage.png"></img>
-    <img class="bg-foliage-bottom-left w-1/3 sm:w-1/12" src="./images/foliage.png"></img>
-    <img class="bg-foliage-bottom-right w-1/3 sm:w-1/12" src="./images/foliage.png"></img>
-    <div class="w-2/3 drop-shadow-md bg-white mx-auto rounded-lg p-4 text-center sm:w-96" id="app">
-      <img alt="Food Forest Folks" src="./images/logo.jpeg"></img>
-
-      <p class="text-xl italic">Edible Landscaping Company</p>
-      <p>
-        <a href="#work-with-us"><img class="inline mr-2" style="height: 24px;" src="./images/Map_pin_icon_green.svg">
-          Island of Hawai'i
-        </a>
-      </p>
-      <hr class="mt-2 mb-2" />
-      <div class="mt-3 flex justify-around">
-        <a href="#our-services" class="text-lg w-1/2 underline">Our services</a>
-        <a href="#about" class="text-lg w-1/2 underline">About us</a>
+  <div class="h-screen sm:h-auto sm:min-h-min flex flex-col justify-center">
+    <img class="bg-foliage-top-left -z-1 sm:z-10 w-1/2 sm:w-24" src="./images/foliage.png"></img>
+    <img class="bg-foliage-top-right -z-1 sm:z-10 w-1/2 sm:w-24" src="./images/foliage.png"></img>
+    <img class="bg-foliage-bottom-left -z-1 w-1/2 sm:hidden" src="./images/foliage.png"></img>
+    <img class="bg-foliage-bottom-right -z-1 w-1/2 sm:hidden" src="./images/foliage.png"></img>
+    <div
+      class="w-2/3 drop-shadow-md bg-white mx-auto rounded-lg p-4 text-center sm:text-left sm:w-screen sm:p-0 sm:flex sm:flex-row sm:px-20 sm:rounded-none items-center"
+      id="app">
+      <img alt="Food Forest Folks" src="./images/logo.jpeg" class="sm:w-24"></img>
+      <div>
+        <p class="text-xl ml-4">
+          <span class="hidden sm:inline">
+            Food Forest Folks <br />
+          </span>
+          <span class="italic">
+            Edible Landscaping Company
+          </span>
+        </p>
+        <p>
+          <a href="#work-with-us" class="sm:hidden"><img class="inline mr-2" style="height: 24px;"
+              src="./images/Map_pin_icon_green.svg">
+            Island of Hawai'i
+          </a>
+        </p>
       </div>
-      <p class="mt-2">
+      <hr class="mt-2 mb-2 sm:hidden" />
+      <div class="mt-2 sm:mt-0 flex justify-around sm:flex-grow sm:justify-end">
+        <a href="#our-services" class="text-lg w-1/2 sm:w-auto sm:ml-4 underline">Our services</a>
+        <a href="#about" class="text-lg w-1/2 sm:w-auto sm:ml-4 underline">About us</a>
+      </div>
+      <div class="mt-2 sm:mt-0 sm:ml-4">
         <a href="#work-with-us" class="text-lg">
           &#128222; <span class="underline">Work with us!</span>
         </a>
-      </p>
+      </div>
     </div>
   </div>
-  <div id="our-services" class="h-screen p-4 sm:container sm:ml-auto sm:mr-auto sm:h-auto">
+  <div id="our-services" class="h-screen sm:h-auto sm:min-h-min p-4 sm:container sm:ml-auto sm:mr-auto">
     <h1 class="mb-2">Our Services</h1>
     <p>
       We specialize in helping people grow food in any available space- big or small. We use permaculture principles and
@@ -67,10 +78,10 @@
     </p>
     <a href="#" class="underline">&lt;- Back to Top</a>
   </div>
-  <div id="about" class="h-screen p-4 border-t-zinc-800 sm:container sm:ml-auto sm:mr-auto">
+  <div id="about" class="h-screen sm:h-auto sm:min-h-min p-4 border-t-zinc-800 sm:container sm:ml-auto sm:mr-auto">
     <h1 class="mb-2">About Us</h1>
     <div class="md:items-center">
-      <div class="img-card md:float-right sm:mx-auto sm:w-96 lg:w-1/3 md:mx-6 sm:flex-shrink-0">
+      <div class="img-card md:float-right md:mx-6 sm:mx-auto sm:w-96 lg:w-1/3 sm:flex-shrink-0">
         <img src="./images/sage-daniel.jpg">
         <p>Sage & Daniel</p>
       </div>
@@ -96,18 +107,22 @@
       elders here. However, we've learned the most from starting our own food forest! We take pride in our work ethic,
       reliability, and our ability to help you envision and create your own paradise.
     </p>
+    <a href="#" class="underline">&lt;- Back to Top</a>
   </div>
   <div id="work-with-us" class="h-screen p-4 sm:container sm:ml-auto sm:mr-auto">
     <h1 class="mb-2">Work With Us</h1>
-    <a href="tel:8084048897" class="block m-2 drop-shadow-md bg-white mx-auto rounded-lg p-4 sm:w-96"
+    <a href="tel:8084048897"
+      class="flex flex-col items-center m-2 drop-shadow-md bg-white mx-auto rounded-lg p-4 sm:w-96 md:float-right md:mx-6 md:mb-6"
       id="schedule-consultation">
-      <h3 class="text-lg sm:text-xl">Call now to schedule a consultation:</h3>
-      <div class="flex flex-row items-center mt-2">
-        <p class="text-4xl">&#128222;</p>
-        <p class="ml-4 text-lg font-semibold">Sage and Daniel
-          <br />
-          (808) 404-8897
-        </p>
+      <div>
+        <h3 class="text-lg sm:text-xl mx-auto">Call now to schedule a consultation:</h3>
+        <div class="inline-flex flex-row items-center mt-2 mx-auto">
+          <p class="text-4xl">&#128222;</p>
+          <p class="ml-4 text-lg font-semibold">Sage and Daniel
+            <br />
+            (808) 404-8897
+          </p>
+        </div>
       </div>
     </a>
     <p>
