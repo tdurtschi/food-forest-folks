@@ -33,11 +33,7 @@ h2 {
 }
 
 p {
-  @apply mb-2;
-}
-
-#our-services {
-  background-color: #f9f9f4;
+  @apply mb-3;
 }
 
 .bg-foliage-top-left,
@@ -67,4 +63,25 @@ p {
   bottom: 0;
   right: 0;
   transform: translate(4%) rotate(-90deg);
+}
+
+a:active {
+  position: relative;
+  top: 2px;
+}
+
+[data-external]::after {
+  content: "(external link)";
+  display: inline-block;
+  margin-left: 4px;
+  width: 1em;
+  height: 1em;
+  text-indent: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/67/OOjs_UI_icon_external-link-ltr.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75% auto;
+  fill: 000;
 }

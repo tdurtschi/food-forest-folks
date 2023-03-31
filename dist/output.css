@@ -513,6 +513,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.clear-both {
+  clear: both;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
@@ -520,6 +524,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mb-2 {
@@ -536,10 +545,6 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
 }
 
 .block {
@@ -568,6 +573,10 @@ video {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .w-2\/3 {
@@ -614,6 +623,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-4 {
@@ -702,11 +715,7 @@ h2 {
 }
 
 p {
-  margin-bottom: 0.5rem;
-}
-
-#our-services {
-  background-color: #f9f9f4;
+  margin-bottom: 0.75rem;
 }
 
 .bg-foliage-top-left,
@@ -739,6 +748,27 @@ p {
   bottom: 0;
   right: 0;
   transform: translate(4%) rotate(-90deg);
+}
+
+a:active {
+  position: relative;
+  top: 2px;
+}
+
+[data-external]::after {
+  content: "(external link)";
+  display: inline-block;
+  margin-left: 4px;
+  width: 1em;
+  height: 1em;
+  text-indent: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/67/OOjs_UI_icon_external-link-ltr.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75% auto;
+  fill: 000;
 }
 
 @media (min-width: 640px) {
@@ -799,6 +829,10 @@ p {
 
   .sm\:mt-0 {
     margin-top: 0px;
+  }
+
+  .sm\:block {
+    display: block;
   }
 
   .sm\:inline {
