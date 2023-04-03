@@ -70,7 +70,7 @@ a:active {
   top: 2px;
 }
 
-a[href="/"]:active {
+a[href="./"]:active {
   top: 0px;
 }
 
