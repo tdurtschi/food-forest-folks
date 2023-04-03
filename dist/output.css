@@ -513,10 +513,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.clear-both {
-  clear: both;
-}
-
 .m-2 {
   margin: 0.5rem;
 }
@@ -805,9 +801,20 @@ a:active {
       max-width: 1536px;
     }
   }
+}
 
+.first-letter\:rounded-lg::first-letter {
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 640px) {
   .sm\:z-10 {
     z-index: 10;
+  }
+
+  .sm\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .sm\:mx-auto {
