@@ -70,6 +70,10 @@ a:active {
   top: 2px;
 }
 
+a[href="/"]:active {
+  top: 0px;
+}
+
 [data-external]::after {
   content: "(external link)";
   display: inline-block;
