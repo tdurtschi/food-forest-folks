@@ -681,6 +681,9 @@ video {
 body {
   background-color: #f9f9f4;
   color: #16100c;
+  font-family: "Roboto Slab", "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 18px;
 }
 
 .h-screen {
@@ -715,16 +718,22 @@ body {
 h1 {
   font-size: 1.875rem;
   line-height: 2.25rem;
+  font-weight: 500;
 }
 
 h2 {
   margin-top: 0.5rem;
   font-size: 1.5rem;
   line-height: 2rem;
+  font-weight: 500;
 }
 
 p {
   margin-bottom: 0.75rem;
+}
+
+.bold {
+  font-weight: 500;
 }
 
 .bg-foliage-top-left,

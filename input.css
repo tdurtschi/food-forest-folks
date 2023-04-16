@@ -5,6 +5,9 @@
 body {
   background-color: #f9f9f4;
   color: #16100c;
+  font-family: "Roboto Slab", "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 18px;
 }
 
 .h-screen {
@@ -26,14 +29,20 @@ body {
 
 h1 {
   @apply text-3xl;
+  font-weight: 500;
 }
 
 h2 {
   @apply text-2xl mt-2;
+  font-weight: 500;
 }
 
 p {
   @apply mb-3;
+}
+
+.bold {
+  font-weight: 500;
 }
 
 .bg-foliage-top-left,
