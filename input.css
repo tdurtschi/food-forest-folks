@@ -50,9 +50,7 @@ p {
 }
 
 .bg-foliage-top-left,
-.bg-foliage-top-right,
-.bg-foliage-bottom-left,
-.bg-foliage-bottom-right {
+.bg-foliage-top-right {
   display: block;
   position: absolute;
 }
