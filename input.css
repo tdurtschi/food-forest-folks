@@ -100,3 +100,7 @@ a[href="./"]:active {
   background-size: 75% auto;
   fill: 000;
 }
+
+.circle {
+  border-radius: 50%;
+}
