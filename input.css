@@ -8,6 +8,9 @@ body {
   font-family: "Roboto Slab", "Times New Roman", Times, serif;
   font-weight: 300;
   font-size: 18px;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 .text-shadow {
@@ -108,5 +111,9 @@ a[href="./"]:active {
 @media (min-width: 1024px) {
   .special-image {
     max-height: 360px;
+  }
+
+  .special-image-2 {
+    max-height: 304px;
   }
 }
