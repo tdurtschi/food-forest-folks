@@ -104,3 +104,9 @@ a[href="./"]:active {
 .circle {
   border-radius: 50%;
 }
+
+@media (min-width: 1024px) {
+  .special-image {
+    max-height: 360px;
+  }
+}
