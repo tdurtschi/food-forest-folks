@@ -631,6 +631,10 @@ video {
   display: block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -641,6 +645,10 @@ video {
 
 .table {
   display: table;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-60 {
@@ -766,6 +774,10 @@ video {
   white-space: nowrap;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-t-zinc-800 {
   --tw-border-opacity: 1;
   border-top-color: rgb(39 39 42 / var(--tw-border-opacity));
@@ -888,6 +900,10 @@ video {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.outline {
+  outline-style: solid;
 }
 
 .drop-shadow-lg {
