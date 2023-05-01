@@ -585,6 +585,11 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -712,6 +717,14 @@ video {
 
 .w-3\/4 {
   width: 75%;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.min-w-full {
+  min-width: 100%;
 }
 
 .max-w-screen-lg {
@@ -857,6 +870,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-6 {
@@ -1227,6 +1244,10 @@ a[href="./"]:active {
     width: 24rem;
   }
 
+  .sm\:w-full {
+    width: 100%;
+  }
+
   .sm\:flex-grow {
     flex-grow: 1;
   }
@@ -1247,9 +1268,18 @@ a[href="./"]:active {
     padding: 1.5rem;
   }
 
+  .sm\:p-4 {
+    padding: 1rem;
+  }
+
   .sm\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .sm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .sm\:text-left {
@@ -1288,6 +1318,11 @@ a[href="./"]:active {
     margin-right: auto;
   }
 
+  .md\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .md\:mb-6 {
     margin-bottom: 1.5rem;
   }
@@ -1324,6 +1359,11 @@ a[href="./"]:active {
 
   .lg\:-bottom-40 {
     bottom: -10rem;
+  }
+
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .lg\:mt-0 {
@@ -1372,5 +1412,10 @@ a[href="./"]:active {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
