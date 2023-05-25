@@ -20,6 +20,7 @@ env:
   SRC_DIR: .
   AZ_SUBSCRIPTION: ${{ secrets.AZ_SUBSCRIPTION }}
   AZ_STORAGE_ACCT_NAME: ${{ secrets.AZ_STORAGE_ACCT_NAME }}
+  AZ_CDN_ENDPOINT_ID: ${{ secrets.AZ_CDN_ENDPOINT_ID }}
 
 permissions:
   contents: read
@@ -45,3 +46,9 @@ jobs:
           azcliversion: 2.30.0
           inlineScript: |
             az storage blob upload-batch --account-name $AZ_STORAGE_ACCT_NAME --auth-mode key -d '$web' -s $SRC_DIR
+      - name: Purge CDN endpoint
+        uses: azure/CLI@v1
+        with:
+          azcliversion: 2.30.0
+          inlineScript: |
+            az cdn endpoint purge --ids $AZ_CDN_ENDPOINT_ID --content-paths '/*'
